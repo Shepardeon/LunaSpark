@@ -7,7 +7,7 @@ LunaSpark is a modular game engine written in C++ using SDL and OpenGL. It is me
 2. Run a setup script from the `Scripts/` folder to generate project files
 3. Start hacking at it
 
-Note that no macOS setup script is currently provided; you can duplicate the Linux script and adjust accordingly.
+Note that no macOS setup script is currently provided; you can duplicate the Linux script and adjust accordingly. Also, ideally most libraries should be built for their respective OS, but as of now, only Windows binaries are provided.
 
 ## License
 - MIT License for this repository (see `LICENSE.txt` for more details)

@@ -1,4 +1,5 @@
--- premake5.lua
+include "Dependencies.lua"
+
 workspace "LunaSpark"
    architecture "x64"
    configurations { "Debug", "Release", "Dist" }

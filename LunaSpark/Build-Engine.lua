@@ -9,7 +9,14 @@ project "LunaSpark"
 
    includedirs
    {
-      "src"
+      "src",
+      "%{IncludeDir.winSDL2}"
+   }
+
+   links 
+   {
+      "%{Library.winSDL2}",
+      "%{Library.winSDL2main}"
    }
 
    targetdir ("../bin/" .. OutputDir .. "/%{prj.name}")
