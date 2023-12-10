@@ -1,31 +1,23 @@
-project "App"
-   kind "ConsoleApp"
+project "LunaSpark"
+   kind "StaticLib"
    language "C++"
    cppdialect "C++20"
-   targetdir "Binaries/%{cfg.buildcfg}"
+   targetdir "bin/%{cfg.buildcfg}"
    staticruntime "off"
 
-   files { "Source/**.h", "Source/**.cpp" }
+   files { "src/**.h", "src/**.cpp" }
 
    includedirs
    {
-      "Source",
-
-	  -- Include Core
-	  "../Core/Source"
+      "src"
    }
 
-   links
-   {
-      "Core"
-   }
-
-   targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
-   objdir ("../Binaries/Intermediates/" .. OutputDir .. "/%{prj.name}")
+   targetdir ("../bin/" .. OutputDir .. "/%{prj.name}")
+   objdir ("../bin/int/" .. OutputDir .. "/%{prj.name}")
 
    filter "system:windows"
        systemversion "latest"
-       defines { "WINDOWS" }
+       defines { }
 
    filter "configurations:Debug"
        defines { "DEBUG" }
