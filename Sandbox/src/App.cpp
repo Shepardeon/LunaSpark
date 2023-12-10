@@ -2,5 +2,5 @@
 
 int main()
 {
-	Core::TestWindow();
+    Core::TestWindow();
 }

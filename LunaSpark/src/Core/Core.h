@@ -2,8 +2,8 @@
 
 namespace Core {
 
-	void PrintHelloWorld();
+    void PrintHelloWorld();
 
-	void TestWindow();
+    void TestWindow();
 
 }
