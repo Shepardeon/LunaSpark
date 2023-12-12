@@ -11,7 +11,9 @@ namespace LunaSpark::Core
     public:
         AppBuilder();
         std::unique_ptr<App> Build();
+
         AppBuilder& WithName(std::string);
+        AppBuilder& WithRunner(std::function<void(App&)>);
 
     private:
         std::unique_ptr<App> app;

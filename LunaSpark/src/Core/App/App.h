@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <functional>
 
 namespace LunaSpark::Core
 {
@@ -8,10 +9,13 @@ namespace LunaSpark::Core
     {
     public:
         void PrintName();
+        void Run();
 
     private:
         friend class AppBuilder;
+
         std::string _name;
+        std::function<void(App&)> _runner;
     };
 }
 
