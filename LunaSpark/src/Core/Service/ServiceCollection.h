@@ -5,8 +5,6 @@
 #include <memory>
 #include "Core/Service/IService.h"
 
-#define NAMEOF(x) #x
-
 namespace LunaSpark::Core 
 {
     class ServiceCollection
