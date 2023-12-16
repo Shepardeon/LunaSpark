@@ -14,6 +14,7 @@ AppBuilder::AppBuilder()
 {
     app = std::make_unique<App>();
     app->_runner = DefaultRunner;
+    app->_services = std::make_unique<ServiceCollection>();
 }
 
 std::unique_ptr<App> AppBuilder::Build()
