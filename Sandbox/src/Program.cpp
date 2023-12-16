@@ -23,6 +23,6 @@ int main()
         .Build();
 
     app->Run();
-    auto svc = app->Resolve<TestService>();
+    auto& svc = app->Resolve<TestService>();
     svc.RunTest();
 }
