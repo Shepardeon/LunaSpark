@@ -19,6 +19,7 @@ AppBuilder::AppBuilder()
 
 std::unique_ptr<App> AppBuilder::Build()
 {
+    app->_services->SetupRequirements();
     return std::move(app);
 }
 
